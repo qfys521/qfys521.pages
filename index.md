@@ -3,8 +3,8 @@
 layout: home
 
 hero:
-  name: "qfys521 Site"
-  text: "A document site."
+  name: "qfys521 doc site"
+  text: "A Document Sites"
   tagline: My great project tagline
   actions:
     - theme: brand

@@ -2,8 +2,8 @@ import { defineConfig } from 'vitepress'
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
-  title: "qfys521 Site",
-  description: "A document site.",
+  title: "qfys521 doc site",
+  description: "A Document Sites",
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
     nav: [
