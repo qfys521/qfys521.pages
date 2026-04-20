@@ -23,19 +23,19 @@ dependencies {
 
 ## Maven 坐标依赖（需先发布）
 
-根工程当前坐标：`com.onebot:0.1.0`。
+根工程当前坐标：`cn.qfys521.onebot:0.1.0`。
 
 ```kotlin
 dependencies {
-    implementation("com.onebot:onebot-v12-lib:0.1.0")
-    implementation("com.onebot:onebot-v12-impl:0.1.0")
+    implementation("cn.qfys521.onebot:onebot-v12-lib:0.1.0")
+    implementation("cn.qfys521.onebot:onebot-v12-impl:0.1.0")
 }
 ```
 
 ## 最小入口
 
 ```kotlin
-import com.onebot.v12.impl.OneBotClientConfig
-import com.onebot.v12.impl.createOneBotV12Client
+import cn.qfys521.onebot.v12.impl.OneBotClientConfig
+import cn.qfys521.onebot.v12.impl.createOneBotV12Client
 ```
 

@@ -1,8 +1,8 @@
 # 四种通信模式配置示例（正向/反向 HTTP/WS）
 
 ```kotlin
-import com.onebot.v12.impl.OneBotClientConfig
-import com.onebot.v12.impl.OneBotTransportMode
+import cn.qfys521.onebot.v12.impl.OneBotClientConfig
+import cn.qfys521.onebot.v12.impl.OneBotTransportMode
 ```
 
 ## 正向 HTTP（FORWARD_HTTP）

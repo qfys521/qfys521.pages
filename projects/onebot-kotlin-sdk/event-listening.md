@@ -1,9 +1,9 @@
 # 事件监听示例
 
 ```kotlin
-import com.onebot.v12.impl.OneBotClientConfig
-import com.onebot.v12.impl.createOneBotV12Client
-import com.onebot.v12.lib.model.OneBotEvent
+import cn.qfys521.onebot.v12.impl.OneBotClientConfig
+import cn.qfys521.onebot.v12.impl.createOneBotV12Client
+import cn.qfys521.onebot.v12.lib.model.OneBotEvent
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.flow.collect
