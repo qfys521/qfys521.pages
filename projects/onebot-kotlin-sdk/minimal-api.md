@@ -1,4 +1,9 @@
-# 最小 API 调用（发送消息 / 查自身信息）
+# 最小 API 调用示例
+
+目标：演示最小可用调用链路，包括：
+
+- `get_self_info`（查自身信息）
+- `send_message`（发送消息）
 
 ```kotlin
 import cn.qfys521.onebot.v12.impl.OneBotClientConfig
@@ -23,7 +28,7 @@ fun main(): Unit = runBlocking {
 
     val sendResp = client.sendMessage(
         SendMessageRequest(
-            detailType = "private",
+            detailType = "private", // private/group/channel
             userId = System.getenv("ONEBOT_TARGET_USER_ID") ?: "123456",
             message = listOf(Segment.text("hello from onebot-kotlin-sdk"))
         )
@@ -38,6 +43,8 @@ fun main(): Unit = runBlocking {
     client.close()
 }
 ```
+
+## 参数提示
 
 - 私聊：`detailType = "private"` + `userId`
 - 群聊：`detailType = "group"` + `groupId`

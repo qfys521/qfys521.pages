@@ -7,4 +7,5 @@
 - 事件监听：[`事件监听示例`](/projects/onebot-kotlin-sdk/event-listening)
 - 通信模式：[`正向/反向 HTTP/WS`](/projects/onebot-kotlin-sdk/transport-modes)
 - 可运行命令：[`直接跑命令`](/projects/onebot-kotlin-sdk/run-commands)
+- Kotlin API 文档：[`KDoc`](/projects/onebot-kotlin-sdk/kotlin-doc)
 

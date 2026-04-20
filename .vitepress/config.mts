@@ -4,6 +4,9 @@ import { defineConfig } from 'vitepress'
 export default defineConfig({
   title: "qfys521 doc site",
   description: "Project documentation hub",
+  ignoreDeadLinks: [
+    /\/projects\/onebot-kotlin-sdk\/kdoc(\/.*)?$/
+  ],
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
     nav: [
@@ -12,7 +15,8 @@ export default defineConfig({
         text: 'Projects',
         items: [
           { text: 'All Projects', link: '/projects/' },
-          { text: 'onebot-kotlin-sdk', link: '/projects/onebot-kotlin-sdk/' }
+          { text: 'onebot-kotlin-sdk', link: '/projects/onebot-kotlin-sdk/' },
+          { text: 'onebot-kotlin-sdk KDoc', link: '/projects/onebot-kotlin-sdk/kotlin-doc' }
         ]
       },
       { text: 'Examples', link: '/markdown-examples' }
@@ -28,7 +32,8 @@ export default defineConfig({
             { text: '最小 API 调用', link: '/projects/onebot-kotlin-sdk/minimal-api' },
             { text: '事件监听', link: '/projects/onebot-kotlin-sdk/event-listening' },
             { text: '通信模式', link: '/projects/onebot-kotlin-sdk/transport-modes' },
-            { text: '可运行命令', link: '/projects/onebot-kotlin-sdk/run-commands' }
+            { text: '可运行命令', link: '/projects/onebot-kotlin-sdk/run-commands' },
+            { text: 'Kotlin API (KDoc)', link: '/projects/onebot-kotlin-sdk/kotlin-doc' }
           ]
         }
       ],

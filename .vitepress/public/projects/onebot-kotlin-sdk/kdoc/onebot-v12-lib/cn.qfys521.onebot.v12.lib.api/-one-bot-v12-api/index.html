@@ -1,0 +1,544 @@
+<!DOCTYPE html>
+<html class="no-js">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" charset="UTF-8">
+    <title>OneBotV12Api</title>
+    <link href="../../../images/logo-icon.svg" rel="icon" type="image/svg">
+    <script>var pathToRoot = "../../../";</script>
+    <script>document.documentElement.classList.replace("no-js","js");</script>
+    <script>const storage = localStorage.getItem("dokka-dark-mode")
+    if (storage == null) {
+        const osDarkSchemePreferred = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches
+        if (osDarkSchemePreferred === true) {
+            document.getElementsByTagName("html")[0].classList.add("theme-dark")
+        }
+    } else {
+        const savedDarkMode = JSON.parse(storage)
+        if(savedDarkMode === true) {
+            document.getElementsByTagName("html")[0].classList.add("theme-dark")
+        }
+    }
+    </script>
+<script type="text/javascript" src="https://unpkg.com/kotlin-playground@1/dist/playground.min.js" async="async"></script>
+<script type="text/javascript" src="../../../scripts/sourceset_dependencies.js" async="async"></script>
+<link href="../../../styles/style.css" rel="Stylesheet">
+<link href="../../../styles/main.css" rel="Stylesheet">
+<link href="../../../styles/prism.css" rel="Stylesheet">
+<link href="../../../styles/logo-styles.css" rel="Stylesheet">
+<link href="../../../styles/font-jb-sans-auto.css" rel="Stylesheet">
+<script type="text/javascript" src="../../../scripts/clipboard.js" async="async"></script>
+<script type="text/javascript" src="../../../scripts/navigation-loader.js" async="async"></script>
+<script type="text/javascript" src="../../../scripts/platform-content-handler.js" async="async"></script>
+<script type="text/javascript" src="../../../scripts/main.js" defer="defer"></script>
+<script type="text/javascript" src="../../../scripts/prism.js" async="async"></script>
+<script type="text/javascript" src="../../../scripts/symbol-parameters-wrapper_deferred.js" defer="defer"></script>
+</head>
+<body>
+    <div class="root">
+<nav class="navigation" id="navigation-wrapper">
+    <div class="navigation--inner">
+        <div class="navigation-title">
+            <button class="menu-toggle" id="menu-toggle" type="button">toggle menu</button>
+            <div class="library-name">
+                    <a class="library-name--link" href="../../../index.html">
+                            onebot-v12-lib
+                    </a>
+            </div>
+            <div class="library-version">
+            </div>
+        </div>
+        <div class="filter-section" id="filter-section">
+                <button class="platform-tag platform-selector jvm-like" data-active="" data-filter=":onebot-v12-lib:dokkaHtml/main">jvm</button>
+        </div>
+    </div>
+    <div class="navigation-controls">
+        <button class="navigation-controls--btn navigation-controls--theme" id="theme-toggle-button" type="button">switch theme</button>
+        <div class="navigation-controls--btn navigation-controls--search" id="searchBar" role="button">search in API</div>
+    </div>
+</nav>
+        <div id="container">
+            <div class="sidebar" id="leftColumn">
+                <div class="sidebar--inner" id="sideMenu"></div>
+            </div>
+            <div id="main">
+<div class="main-content" data-page-type="classlike" id="content" pageIds="onebot-v12-lib::cn.qfys521.onebot.v12.lib.api/OneBotV12Api///PointingToDeclaration//-1889619766">
+  <div class="breadcrumbs"><a href="../../../index.html">onebot-v12-lib</a><span class="delimiter">/</span><a href="../index.html">cn.qfys521.onebot.v12.lib.api</a><span class="delimiter">/</span><span class="current">OneBotV12Api</span></div>
+  <div class="cover ">
+    <h1 class="cover"><span>One</span><wbr></wbr><span>Bot</span><wbr></wbr><span><span>V12Api</span></span></h1>
+    <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":onebot-v12-lib:dokkaHtml/main"><div class="symbol monospace"><span class="token keyword">class </span><a href="index.html">OneBotV12Api</a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">client<span class="token operator">: </span><a href="../-one-bot-client/index.html">OneBotClient</a></span></span><span class="token punctuation">)</span></div><p class="paragraph">Full OneBot V12 action wrapper, covering all actions documented in onebots/docs protocol page.</p><p class="paragraph">This class delegates low-level transport and serialization details to <a href="../-one-bot-client/index.html">OneBotClient</a> and exposes typed methods for all documented actions.</p></div></div>
+  </div>
+  <div class="tabbedcontent">
+    <div class="tabs-section" tabs-section="tabs-section"><button class="section-tab" data-active="" data-togglable="CONSTRUCTOR,TYPE,PROPERTY,FUNCTION">Members</button></div>
+    <div class="tabs-section-body">
+      <div data-togglable="CONSTRUCTOR">
+        <h2 class="">Constructors</h2>
+        <div class="table"><a data-name="-1789636925%2FConstructors%2F-1889619766" anchor-label="OneBotV12Api" id="-1789636925%2FConstructors%2F-1889619766" data-filterable-set=":onebot-v12-lib:dokkaHtml/main"></a>
+          <div class="table-row" data-togglable="CONSTRUCTOR" data-filterable-current=":onebot-v12-lib:dokkaHtml/main" data-filterable-set=":onebot-v12-lib:dokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-one-bot-v12-api.html"><span>One</span><wbr></wbr><span>Bot</span><wbr></wbr><span><span>V12Api</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1789636925%2FConstructors%2F-1889619766"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":onebot-v12-lib:dokkaHtml/main"><div class="symbol monospace"><span class="token keyword">constructor</span><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">client<span class="token operator">: </span><a href="../-one-bot-client/index.html">OneBotClient</a></span></span><span class="token punctuation">)</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div data-togglable="FUNCTION">
+        <h2 class="">Functions</h2>
+        <div class="table"><a data-name="-620134941%2FFunctions%2F-1889619766" anchor-label="deleteEssenceMessage" id="-620134941%2FFunctions%2F-1889619766" data-filterable-set=":onebot-v12-lib:dokkaHtml/main"></a>
+          <div class="table-row" data-filterable-current=":onebot-v12-lib:dokkaHtml/main" data-filterable-set=":onebot-v12-lib:dokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="delete-essence-message.html"><span>delete</span><wbr></wbr><span>Essence</span><wbr></wbr><span><span>Message</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-620134941%2FFunctions%2F-1889619766"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":onebot-v12-lib:dokkaHtml/main"><div class="symbol monospace"><span class="token keyword">suspend </span><span class="token keyword">fun </span><a href="delete-essence-message.html"><span class="token function">deleteEssenceMessage</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">groupId<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin-stdlib/kotlin/-string/index.html">String</a><span class="token punctuation">, </span></span><span class="parameter ">messageId<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin-stdlib/kotlin/-string/index.html">String</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="../../cn.qfys521.onebot.v12.lib.model/-api-response/index.html">ApiResponse</a><span class="token operator">&lt;</span><span data-unresolved-link="kotlinx.serialization.json/JsonElement///PointingToDeclaration/">JsonElement</span><span class="token operator">&gt;</span></div><div class="brief "><p class="paragraph">Removes essence message mark from message.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-704226066%2FFunctions%2F-1889619766" anchor-label="deleteMessage" id="-704226066%2FFunctions%2F-1889619766" data-filterable-set=":onebot-v12-lib:dokkaHtml/main"></a>
+          <div class="table-row" data-filterable-current=":onebot-v12-lib:dokkaHtml/main" data-filterable-set=":onebot-v12-lib:dokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="delete-message.html"><span>delete</span><wbr></wbr><span><span>Message</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-704226066%2FFunctions%2F-1889619766"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":onebot-v12-lib:dokkaHtml/main"><div class="symbol monospace"><span class="token keyword">suspend </span><span class="token keyword">fun </span><a href="delete-message.html"><span class="token function">deleteMessage</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">messageId<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin-stdlib/kotlin/-string/index.html">String</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="../../cn.qfys521.onebot.v12.lib.model/-api-response/index.html">ApiResponse</a><span class="token operator">&lt;</span><span data-unresolved-link="kotlinx.serialization.json/JsonObject///PointingToDeclaration/">JsonObject</span><span class="token operator">&gt;</span></div><div class="brief "><p class="paragraph">Deletes a message by message ID.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="486206364%2FFunctions%2F-1889619766" anchor-label="getChannelInfo" id="486206364%2FFunctions%2F-1889619766" data-filterable-set=":onebot-v12-lib:dokkaHtml/main"></a>
+          <div class="table-row" data-filterable-current=":onebot-v12-lib:dokkaHtml/main" data-filterable-set=":onebot-v12-lib:dokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="get-channel-info.html"><span>get</span><wbr></wbr><span>Channel</span><wbr></wbr><span><span>Info</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="486206364%2FFunctions%2F-1889619766"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":onebot-v12-lib:dokkaHtml/main"><div class="symbol monospace"><span class="token keyword">suspend </span><span class="token keyword">fun </span><a href="get-channel-info.html"><span class="token function">getChannelInfo</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">guildId<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin-stdlib/kotlin/-string/index.html">String</a><span class="token punctuation">, </span></span><span class="parameter ">channelId<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin-stdlib/kotlin/-string/index.html">String</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="../../cn.qfys521.onebot.v12.lib.model/-api-response/index.html">ApiResponse</a><span class="token operator">&lt;</span><a href="../../cn.qfys521.onebot.v12.lib.model/-channel-info/index.html">ChannelInfo</a><span class="token operator">&gt;</span></div><div class="brief "><p class="paragraph">Gets channel information by guild ID and channel ID.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1777837254%2FFunctions%2F-1889619766" anchor-label="getChannelList" id="1777837254%2FFunctions%2F-1889619766" data-filterable-set=":onebot-v12-lib:dokkaHtml/main"></a>
+          <div class="table-row" data-filterable-current=":onebot-v12-lib:dokkaHtml/main" data-filterable-set=":onebot-v12-lib:dokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="get-channel-list.html"><span>get</span><wbr></wbr><span>Channel</span><wbr></wbr><span><span>List</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1777837254%2FFunctions%2F-1889619766"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":onebot-v12-lib:dokkaHtml/main"><div class="symbol monospace"><span class="token keyword">suspend </span><span class="token keyword">fun </span><a href="get-channel-list.html"><span class="token function">getChannelList</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">guildId<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin-stdlib/kotlin/-string/index.html">String</a><span class="token punctuation">, </span></span><span class="parameter ">joinedOnly<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin-stdlib/kotlin/-boolean/index.html">Boolean</a><span class="token operator">?</span><span class="token operator"> = </span>null</span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="../../cn.qfys521.onebot.v12.lib.model/-api-response/index.html">ApiResponse</a><span class="token operator">&lt;</span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin-stdlib/kotlin.collections/-list/index.html">List</a><span class="token operator">&lt;</span><a href="../../cn.qfys521.onebot.v12.lib.model/-channel-info/index.html">ChannelInfo</a><span class="token operator">&gt;</span><span class="token operator">&gt;</span></div><div class="brief "><p class="paragraph">Gets channels in a guild.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1933282272%2FFunctions%2F-1889619766" anchor-label="getFriendList" id="-1933282272%2FFunctions%2F-1889619766" data-filterable-set=":onebot-v12-lib:dokkaHtml/main"></a>
+          <div class="table-row" data-filterable-current=":onebot-v12-lib:dokkaHtml/main" data-filterable-set=":onebot-v12-lib:dokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="get-friend-list.html"><span>get</span><wbr></wbr><span>Friend</span><wbr></wbr><span><span>List</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1933282272%2FFunctions%2F-1889619766"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":onebot-v12-lib:dokkaHtml/main"><div class="symbol monospace"><span class="token keyword">suspend </span><span class="token keyword">fun </span><a href="get-friend-list.html"><span class="token function">getFriendList</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><a href="../../cn.qfys521.onebot.v12.lib.model/-api-response/index.html">ApiResponse</a><span class="token operator">&lt;</span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin-stdlib/kotlin.collections/-list/index.html">List</a><span class="token operator">&lt;</span><a href="../../cn.qfys521.onebot.v12.lib.model/-user-info/index.html">UserInfo</a><span class="token operator">&gt;</span><span class="token operator">&gt;</span></div><div class="brief "><p class="paragraph">Gets friend list of the current bot account.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1359472333%2FFunctions%2F-1889619766" anchor-label="getGroupInfo" id="-1359472333%2FFunctions%2F-1889619766" data-filterable-set=":onebot-v12-lib:dokkaHtml/main"></a>
+          <div class="table-row" data-filterable-current=":onebot-v12-lib:dokkaHtml/main" data-filterable-set=":onebot-v12-lib:dokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="get-group-info.html"><span>get</span><wbr></wbr><span>Group</span><wbr></wbr><span><span>Info</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1359472333%2FFunctions%2F-1889619766"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":onebot-v12-lib:dokkaHtml/main"><div class="symbol monospace"><span class="token keyword">suspend </span><span class="token keyword">fun </span><a href="get-group-info.html"><span class="token function">getGroupInfo</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">groupId<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin-stdlib/kotlin/-string/index.html">String</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="../../cn.qfys521.onebot.v12.lib.model/-api-response/index.html">ApiResponse</a><span class="token operator">&lt;</span><a href="../../cn.qfys521.onebot.v12.lib.model/-group-info/index.html">GroupInfo</a><span class="token operator">&gt;</span></div><div class="brief "><p class="paragraph">Gets group metadata by group ID.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1322886783%2FFunctions%2F-1889619766" anchor-label="getGroupList" id="-1322886783%2FFunctions%2F-1889619766" data-filterable-set=":onebot-v12-lib:dokkaHtml/main"></a>
+          <div class="table-row" data-filterable-current=":onebot-v12-lib:dokkaHtml/main" data-filterable-set=":onebot-v12-lib:dokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="get-group-list.html"><span>get</span><wbr></wbr><span>Group</span><wbr></wbr><span><span>List</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1322886783%2FFunctions%2F-1889619766"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":onebot-v12-lib:dokkaHtml/main"><div class="symbol monospace"><span class="token keyword">suspend </span><span class="token keyword">fun </span><a href="get-group-list.html"><span class="token function">getGroupList</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><a href="../../cn.qfys521.onebot.v12.lib.model/-api-response/index.html">ApiResponse</a><span class="token operator">&lt;</span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin-stdlib/kotlin.collections/-list/index.html">List</a><span class="token operator">&lt;</span><a href="../../cn.qfys521.onebot.v12.lib.model/-group-info/index.html">GroupInfo</a><span class="token operator">&gt;</span><span class="token operator">&gt;</span></div><div class="brief "><p class="paragraph">Gets groups visible/joined by the bot.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1815548142%2FFunctions%2F-1889619766" anchor-label="getGroupMemberInfo" id="-1815548142%2FFunctions%2F-1889619766" data-filterable-set=":onebot-v12-lib:dokkaHtml/main"></a>
+          <div class="table-row" data-filterable-current=":onebot-v12-lib:dokkaHtml/main" data-filterable-set=":onebot-v12-lib:dokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="get-group-member-info.html"><span>get</span><wbr></wbr><span>Group</span><wbr></wbr><span>Member</span><wbr></wbr><span><span>Info</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1815548142%2FFunctions%2F-1889619766"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":onebot-v12-lib:dokkaHtml/main"><div class="symbol monospace"><span class="token keyword">suspend </span><span class="token keyword">fun </span><a href="get-group-member-info.html"><span class="token function">getGroupMemberInfo</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">groupId<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin-stdlib/kotlin/-string/index.html">String</a><span class="token punctuation">, </span></span><span class="parameter ">userId<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin-stdlib/kotlin/-string/index.html">String</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="../../cn.qfys521.onebot.v12.lib.model/-api-response/index.html">ApiResponse</a><span class="token operator">&lt;</span><a href="../../cn.qfys521.onebot.v12.lib.model/-group-member-info/index.html">GroupMemberInfo</a><span class="token operator">&gt;</span></div><div class="brief "><p class="paragraph">Gets group member information for a specific user in a group.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-906032931%2FFunctions%2F-1889619766" anchor-label="getGroupMemberList" id="-906032931%2FFunctions%2F-1889619766" data-filterable-set=":onebot-v12-lib:dokkaHtml/main"></a>
+          <div class="table-row" data-filterable-current=":onebot-v12-lib:dokkaHtml/main" data-filterable-set=":onebot-v12-lib:dokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="get-group-member-list.html"><span>get</span><wbr></wbr><span>Group</span><wbr></wbr><span>Member</span><wbr></wbr><span><span>List</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-906032931%2FFunctions%2F-1889619766"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":onebot-v12-lib:dokkaHtml/main"><div class="symbol monospace"><span class="token keyword">suspend </span><span class="token keyword">fun </span><a href="get-group-member-list.html"><span class="token function">getGroupMemberList</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">groupId<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin-stdlib/kotlin/-string/index.html">String</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="../../cn.qfys521.onebot.v12.lib.model/-api-response/index.html">ApiResponse</a><span class="token operator">&lt;</span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin-stdlib/kotlin.collections/-list/index.html">List</a><span class="token operator">&lt;</span><a href="../../cn.qfys521.onebot.v12.lib.model/-group-member-info/index.html">GroupMemberInfo</a><span class="token operator">&gt;</span><span class="token operator">&gt;</span></div><div class="brief "><p class="paragraph">Gets all members in a group.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1573302873%2FFunctions%2F-1889619766" anchor-label="getGuildInfo" id="-1573302873%2FFunctions%2F-1889619766" data-filterable-set=":onebot-v12-lib:dokkaHtml/main"></a>
+          <div class="table-row" data-filterable-current=":onebot-v12-lib:dokkaHtml/main" data-filterable-set=":onebot-v12-lib:dokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="get-guild-info.html"><span>get</span><wbr></wbr><span>Guild</span><wbr></wbr><span><span>Info</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1573302873%2FFunctions%2F-1889619766"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":onebot-v12-lib:dokkaHtml/main"><div class="symbol monospace"><span class="token keyword">suspend </span><span class="token keyword">fun </span><a href="get-guild-info.html"><span class="token function">getGuildInfo</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">guildId<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin-stdlib/kotlin/-string/index.html">String</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="../../cn.qfys521.onebot.v12.lib.model/-api-response/index.html">ApiResponse</a><span class="token operator">&lt;</span><a href="../../cn.qfys521.onebot.v12.lib.model/-guild-info/index.html">GuildInfo</a><span class="token operator">&gt;</span></div><div class="brief "><p class="paragraph">Gets guild information by guild ID.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="893712525%2FFunctions%2F-1889619766" anchor-label="getGuildList" id="893712525%2FFunctions%2F-1889619766" data-filterable-set=":onebot-v12-lib:dokkaHtml/main"></a>
+          <div class="table-row" data-filterable-current=":onebot-v12-lib:dokkaHtml/main" data-filterable-set=":onebot-v12-lib:dokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="get-guild-list.html"><span>get</span><wbr></wbr><span>Guild</span><wbr></wbr><span><span>List</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="893712525%2FFunctions%2F-1889619766"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":onebot-v12-lib:dokkaHtml/main"><div class="symbol monospace"><span class="token keyword">suspend </span><span class="token keyword">fun </span><a href="get-guild-list.html"><span class="token function">getGuildList</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><a href="../../cn.qfys521.onebot.v12.lib.model/-api-response/index.html">ApiResponse</a><span class="token operator">&lt;</span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin-stdlib/kotlin.collections/-list/index.html">List</a><span class="token operator">&lt;</span><a href="../../cn.qfys521.onebot.v12.lib.model/-guild-info/index.html">GuildInfo</a><span class="token operator">&gt;</span><span class="token operator">&gt;</span></div><div class="brief "><p class="paragraph">Gets guild list.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="599220614%2FFunctions%2F-1889619766" anchor-label="getGuildMemberInfo" id="599220614%2FFunctions%2F-1889619766" data-filterable-set=":onebot-v12-lib:dokkaHtml/main"></a>
+          <div class="table-row" data-filterable-current=":onebot-v12-lib:dokkaHtml/main" data-filterable-set=":onebot-v12-lib:dokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="get-guild-member-info.html"><span>get</span><wbr></wbr><span>Guild</span><wbr></wbr><span>Member</span><wbr></wbr><span><span>Info</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="599220614%2FFunctions%2F-1889619766"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":onebot-v12-lib:dokkaHtml/main"><div class="symbol monospace"><span class="token keyword">suspend </span><span class="token keyword">fun </span><a href="get-guild-member-info.html"><span class="token function">getGuildMemberInfo</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">guildId<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin-stdlib/kotlin/-string/index.html">String</a><span class="token punctuation">, </span></span><span class="parameter ">userId<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin-stdlib/kotlin/-string/index.html">String</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="../../cn.qfys521.onebot.v12.lib.model/-api-response/index.html">ApiResponse</a><span class="token operator">&lt;</span><a href="../../cn.qfys521.onebot.v12.lib.model/-guild-member-info/index.html">GuildMemberInfo</a><span class="token operator">&gt;</span></div><div class="brief "><p class="paragraph">Gets member information of a guild user.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1155274321%2FFunctions%2F-1889619766" anchor-label="getGuildMemberList" id="1155274321%2FFunctions%2F-1889619766" data-filterable-set=":onebot-v12-lib:dokkaHtml/main"></a>
+          <div class="table-row" data-filterable-current=":onebot-v12-lib:dokkaHtml/main" data-filterable-set=":onebot-v12-lib:dokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="get-guild-member-list.html"><span>get</span><wbr></wbr><span>Guild</span><wbr></wbr><span>Member</span><wbr></wbr><span><span>List</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1155274321%2FFunctions%2F-1889619766"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":onebot-v12-lib:dokkaHtml/main"><div class="symbol monospace"><span class="token keyword">suspend </span><span class="token keyword">fun </span><a href="get-guild-member-list.html"><span class="token function">getGuildMemberList</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">guildId<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin-stdlib/kotlin/-string/index.html">String</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="../../cn.qfys521.onebot.v12.lib.model/-api-response/index.html">ApiResponse</a><span class="token operator">&lt;</span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin-stdlib/kotlin.collections/-list/index.html">List</a><span class="token operator">&lt;</span><a href="../../cn.qfys521.onebot.v12.lib.model/-guild-member-info/index.html">GuildMemberInfo</a><span class="token operator">&gt;</span><span class="token operator">&gt;</span></div><div class="brief "><p class="paragraph">Gets guild member list.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="2028345314%2FFunctions%2F-1889619766" anchor-label="getSelfInfo" id="2028345314%2FFunctions%2F-1889619766" data-filterable-set=":onebot-v12-lib:dokkaHtml/main"></a>
+          <div class="table-row" data-filterable-current=":onebot-v12-lib:dokkaHtml/main" data-filterable-set=":onebot-v12-lib:dokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="get-self-info.html"><span>get</span><wbr></wbr><span>Self</span><wbr></wbr><span><span>Info</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="2028345314%2FFunctions%2F-1889619766"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":onebot-v12-lib:dokkaHtml/main"><div class="symbol monospace"><span class="token keyword">suspend </span><span class="token keyword">fun </span><a href="get-self-info.html"><span class="token function">getSelfInfo</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><a href="../../cn.qfys521.onebot.v12.lib.model/-api-response/index.html">ApiResponse</a><span class="token operator">&lt;</span><a href="../../cn.qfys521.onebot.v12.lib.model/-self-info/index.html">SelfInfo</a><span class="token operator">&gt;</span></div><div class="brief "><p class="paragraph">Gets current bot account information.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-382507487%2FFunctions%2F-1889619766" anchor-label="getUserInfo" id="-382507487%2FFunctions%2F-1889619766" data-filterable-set=":onebot-v12-lib:dokkaHtml/main"></a>
+          <div class="table-row" data-filterable-current=":onebot-v12-lib:dokkaHtml/main" data-filterable-set=":onebot-v12-lib:dokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="get-user-info.html"><span>get</span><wbr></wbr><span>User</span><wbr></wbr><span><span>Info</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-382507487%2FFunctions%2F-1889619766"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":onebot-v12-lib:dokkaHtml/main"><div class="symbol monospace"><span class="token keyword">suspend </span><span class="token keyword">fun </span><a href="get-user-info.html"><span class="token function">getUserInfo</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">userId<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin-stdlib/kotlin/-string/index.html">String</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="../../cn.qfys521.onebot.v12.lib.model/-api-response/index.html">ApiResponse</a><span class="token operator">&lt;</span><a href="../../cn.qfys521.onebot.v12.lib.model/-user-info/index.html">UserInfo</a><span class="token operator">&gt;</span></div><div class="brief "><p class="paragraph">Gets information for a user (friend or stranger).</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1931673948%2FFunctions%2F-1889619766" anchor-label="leaveGroup" id="-1931673948%2FFunctions%2F-1889619766" data-filterable-set=":onebot-v12-lib:dokkaHtml/main"></a>
+          <div class="table-row" data-filterable-current=":onebot-v12-lib:dokkaHtml/main" data-filterable-set=":onebot-v12-lib:dokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="leave-group.html"><span>leave</span><wbr></wbr><span><span>Group</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1931673948%2FFunctions%2F-1889619766"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":onebot-v12-lib:dokkaHtml/main"><div class="symbol monospace"><span class="token keyword">suspend </span><span class="token keyword">fun </span><a href="leave-group.html"><span class="token function">leaveGroup</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">groupId<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin-stdlib/kotlin/-string/index.html">String</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="../../cn.qfys521.onebot.v12.lib.model/-api-response/index.html">ApiResponse</a><span class="token operator">&lt;</span><span data-unresolved-link="kotlinx.serialization.json/JsonElement///PointingToDeclaration/">JsonElement</span><span class="token operator">&gt;</span></div><div class="brief "><p class="paragraph">Leaves the group.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-422663866%2FFunctions%2F-1889619766" anchor-label="sendGroupSign" id="-422663866%2FFunctions%2F-1889619766" data-filterable-set=":onebot-v12-lib:dokkaHtml/main"></a>
+          <div class="table-row" data-filterable-current=":onebot-v12-lib:dokkaHtml/main" data-filterable-set=":onebot-v12-lib:dokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="send-group-sign.html"><span>send</span><wbr></wbr><span>Group</span><wbr></wbr><span><span>Sign</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-422663866%2FFunctions%2F-1889619766"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":onebot-v12-lib:dokkaHtml/main"><div class="symbol monospace"><span class="token keyword">suspend </span><span class="token keyword">fun </span><a href="send-group-sign.html"><span class="token function">sendGroupSign</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">groupId<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin-stdlib/kotlin/-string/index.html">String</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="../../cn.qfys521.onebot.v12.lib.model/-api-response/index.html">ApiResponse</a><span class="token operator">&lt;</span><span data-unresolved-link="kotlinx.serialization.json/JsonElement///PointingToDeclaration/">JsonElement</span><span class="token operator">&gt;</span></div><div class="brief "><p class="paragraph">Sends group sign-in action.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-262247779%2FFunctions%2F-1889619766" anchor-label="sendMessage" id="-262247779%2FFunctions%2F-1889619766" data-filterable-set=":onebot-v12-lib:dokkaHtml/main"></a>
+          <div class="table-row" data-filterable-current=":onebot-v12-lib:dokkaHtml/main" data-filterable-set=":onebot-v12-lib:dokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="send-message.html"><span>send</span><wbr></wbr><span><span>Message</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-262247779%2FFunctions%2F-1889619766"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":onebot-v12-lib:dokkaHtml/main"><div class="symbol monospace"><span class="token keyword">suspend </span><span class="token keyword">fun </span><a href="send-message.html"><span class="token function">sendMessage</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">request<span class="token operator">: </span><a href="../../cn.qfys521.onebot.v12.lib.model/-send-message-request/index.html">SendMessageRequest</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="../../cn.qfys521.onebot.v12.lib.model/-api-response/index.html">ApiResponse</a><span class="token operator">&lt;</span><a href="../../cn.qfys521.onebot.v12.lib.model/-send-message-result/index.html">SendMessageResult</a><span class="token operator">&gt;</span></div><div class="brief "><p class="paragraph">Sends a message to private/group/channel target according to <a href="../../cn.qfys521.onebot.v12.lib.model/-send-message-request/detail-type.html">SendMessageRequest.detailType</a>.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1633502743%2FFunctions%2F-1889619766" anchor-label="sendUserLike" id="1633502743%2FFunctions%2F-1889619766" data-filterable-set=":onebot-v12-lib:dokkaHtml/main"></a>
+          <div class="table-row" data-filterable-current=":onebot-v12-lib:dokkaHtml/main" data-filterable-set=":onebot-v12-lib:dokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="send-user-like.html"><span>send</span><wbr></wbr><span>User</span><wbr></wbr><span><span>Like</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1633502743%2FFunctions%2F-1889619766"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":onebot-v12-lib:dokkaHtml/main"><div class="symbol monospace"><span class="token keyword">suspend </span><span class="token keyword">fun </span><a href="send-user-like.html"><span class="token function">sendUserLike</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">userId<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin-stdlib/kotlin/-string/index.html">String</a><span class="token punctuation">, </span></span><span class="parameter ">times<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin-stdlib/kotlin/-int/index.html">Int</a><span class="token operator"> = </span><span class="token constant">10</span></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="../../cn.qfys521.onebot.v12.lib.model/-api-response/index.html">ApiResponse</a><span class="token operator">&lt;</span><span data-unresolved-link="kotlinx.serialization.json/JsonElement///PointingToDeclaration/">JsonElement</span><span class="token operator">&gt;</span></div><div class="brief "><p class="paragraph">Sends like to user.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1499985776%2FFunctions%2F-1889619766" anchor-label="setEssenceMessage" id="-1499985776%2FFunctions%2F-1889619766" data-filterable-set=":onebot-v12-lib:dokkaHtml/main"></a>
+          <div class="table-row" data-filterable-current=":onebot-v12-lib:dokkaHtml/main" data-filterable-set=":onebot-v12-lib:dokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="set-essence-message.html"><span>set</span><wbr></wbr><span>Essence</span><wbr></wbr><span><span>Message</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1499985776%2FFunctions%2F-1889619766"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":onebot-v12-lib:dokkaHtml/main"><div class="symbol monospace"><span class="token keyword">suspend </span><span class="token keyword">fun </span><a href="set-essence-message.html"><span class="token function">setEssenceMessage</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">groupId<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin-stdlib/kotlin/-string/index.html">String</a><span class="token punctuation">, </span></span><span class="parameter ">messageId<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin-stdlib/kotlin/-string/index.html">String</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="../../cn.qfys521.onebot.v12.lib.model/-api-response/index.html">ApiResponse</a><span class="token operator">&lt;</span><span data-unresolved-link="kotlinx.serialization.json/JsonElement///PointingToDeclaration/">JsonElement</span><span class="token operator">&gt;</span></div><div class="brief "><p class="paragraph">Marks a message as essence message.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="810019803%2FFunctions%2F-1889619766" anchor-label="setGroupAdmin" id="810019803%2FFunctions%2F-1889619766" data-filterable-set=":onebot-v12-lib:dokkaHtml/main"></a>
+          <div class="table-row" data-filterable-current=":onebot-v12-lib:dokkaHtml/main" data-filterable-set=":onebot-v12-lib:dokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="set-group-admin.html"><span>set</span><wbr></wbr><span>Group</span><wbr></wbr><span><span>Admin</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="810019803%2FFunctions%2F-1889619766"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":onebot-v12-lib:dokkaHtml/main"><div class="symbol monospace"><span class="token keyword">suspend </span><span class="token keyword">fun </span><a href="set-group-admin.html"><span class="token function">setGroupAdmin</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">groupId<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin-stdlib/kotlin/-string/index.html">String</a><span class="token punctuation">, </span></span><span class="parameter ">userId<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin-stdlib/kotlin/-string/index.html">String</a><span class="token punctuation">, </span></span><span class="parameter ">enable<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin-stdlib/kotlin/-boolean/index.html">Boolean</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="../../cn.qfys521.onebot.v12.lib.model/-api-response/index.html">ApiResponse</a><span class="token operator">&lt;</span><span data-unresolved-link="kotlinx.serialization.json/JsonElement///PointingToDeclaration/">JsonElement</span><span class="token operator">&gt;</span></div><div class="brief "><p class="paragraph">Sets or clears group admin role for user.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1213582110%2FFunctions%2F-1889619766" anchor-label="setGroupAnonymousBan" id="1213582110%2FFunctions%2F-1889619766" data-filterable-set=":onebot-v12-lib:dokkaHtml/main"></a>
+          <div class="table-row" data-filterable-current=":onebot-v12-lib:dokkaHtml/main" data-filterable-set=":onebot-v12-lib:dokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="set-group-anonymous-ban.html"><span>set</span><wbr></wbr><span>Group</span><wbr></wbr><span>Anonymous</span><wbr></wbr><span><span>Ban</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1213582110%2FFunctions%2F-1889619766"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":onebot-v12-lib:dokkaHtml/main"><div class="symbol monospace"><span class="token keyword">suspend </span><span class="token keyword">fun </span><a href="set-group-anonymous-ban.html"><span class="token function">setGroupAnonymousBan</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">groupId<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin-stdlib/kotlin/-string/index.html">String</a><span class="token punctuation">, </span></span><span class="parameter ">anonymousFlag<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin-stdlib/kotlin/-string/index.html">String</a><span class="token operator">?</span><span class="token operator"> = </span>null<span class="token punctuation">, </span></span><span class="parameter ">duration<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin-stdlib/kotlin/-int/index.html">Int</a><span class="token punctuation">, </span></span><span class="parameter ">anonymous<span class="token operator">: </span><span data-unresolved-link="kotlinx.serialization.json/JsonObject///PointingToDeclaration/">JsonObject</span><span class="token operator">?</span><span class="token operator"> = </span>null</span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="../../cn.qfys521.onebot.v12.lib.model/-api-response/index.html">ApiResponse</a><span class="token operator">&lt;</span><span data-unresolved-link="kotlinx.serialization.json/JsonElement///PointingToDeclaration/">JsonElement</span><span class="token operator">&gt;</span></div><div class="brief "><p class="paragraph">Bans anonymous user by flag or anonymous payload.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1743493900%2FFunctions%2F-1889619766" anchor-label="setGroupBan" id="-1743493900%2FFunctions%2F-1889619766" data-filterable-set=":onebot-v12-lib:dokkaHtml/main"></a>
+          <div class="table-row" data-filterable-current=":onebot-v12-lib:dokkaHtml/main" data-filterable-set=":onebot-v12-lib:dokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="set-group-ban.html"><span>set</span><wbr></wbr><span>Group</span><wbr></wbr><span><span>Ban</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1743493900%2FFunctions%2F-1889619766"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":onebot-v12-lib:dokkaHtml/main"><div class="symbol monospace"><span class="token keyword">suspend </span><span class="token keyword">fun </span><a href="set-group-ban.html"><span class="token function">setGroupBan</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">groupId<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin-stdlib/kotlin/-string/index.html">String</a><span class="token punctuation">, </span></span><span class="parameter ">userId<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin-stdlib/kotlin/-string/index.html">String</a><span class="token punctuation">, </span></span><span class="parameter ">duration<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin-stdlib/kotlin/-int/index.html">Int</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="../../cn.qfys521.onebot.v12.lib.model/-api-response/index.html">ApiResponse</a><span class="token operator">&lt;</span><span data-unresolved-link="kotlinx.serialization.json/JsonElement///PointingToDeclaration/">JsonElement</span><span class="token operator">&gt;</span></div><div class="brief "><p class="paragraph">Sets group member ban duration in seconds.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1094929133%2FFunctions%2F-1889619766" anchor-label="setGroupCard" id="-1094929133%2FFunctions%2F-1889619766" data-filterable-set=":onebot-v12-lib:dokkaHtml/main"></a>
+          <div class="table-row" data-filterable-current=":onebot-v12-lib:dokkaHtml/main" data-filterable-set=":onebot-v12-lib:dokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="set-group-card.html"><span>set</span><wbr></wbr><span>Group</span><wbr></wbr><span><span>Card</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1094929133%2FFunctions%2F-1889619766"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":onebot-v12-lib:dokkaHtml/main"><div class="symbol monospace"><span class="token keyword">suspend </span><span class="token keyword">fun </span><a href="set-group-card.html"><span class="token function">setGroupCard</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">groupId<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin-stdlib/kotlin/-string/index.html">String</a><span class="token punctuation">, </span></span><span class="parameter ">userId<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin-stdlib/kotlin/-string/index.html">String</a><span class="token punctuation">, </span></span><span class="parameter ">card<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin-stdlib/kotlin/-string/index.html">String</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="../../cn.qfys521.onebot.v12.lib.model/-api-response/index.html">ApiResponse</a><span class="token operator">&lt;</span><span data-unresolved-link="kotlinx.serialization.json/JsonElement///PointingToDeclaration/">JsonElement</span><span class="token operator">&gt;</span></div><div class="brief "><p class="paragraph">Sets member group card (display nickname in group).</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1945821728%2FFunctions%2F-1889619766" anchor-label="setGroupKick" id="1945821728%2FFunctions%2F-1889619766" data-filterable-set=":onebot-v12-lib:dokkaHtml/main"></a>
+          <div class="table-row" data-filterable-current=":onebot-v12-lib:dokkaHtml/main" data-filterable-set=":onebot-v12-lib:dokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="set-group-kick.html"><span>set</span><wbr></wbr><span>Group</span><wbr></wbr><span><span>Kick</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1945821728%2FFunctions%2F-1889619766"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":onebot-v12-lib:dokkaHtml/main"><div class="symbol monospace"><span class="token keyword">suspend </span><span class="token keyword">fun </span><a href="set-group-kick.html"><span class="token function">setGroupKick</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">groupId<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin-stdlib/kotlin/-string/index.html">String</a><span class="token punctuation">, </span></span><span class="parameter ">userId<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin-stdlib/kotlin/-string/index.html">String</a><span class="token punctuation">, </span></span><span class="parameter ">rejectAddRequest<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin-stdlib/kotlin/-boolean/index.html">Boolean</a><span class="token operator"> = </span><span class="token boolean">false</span></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="../../cn.qfys521.onebot.v12.lib.model/-api-response/index.html">ApiResponse</a><span class="token operator">&lt;</span><span data-unresolved-link="kotlinx.serialization.json/JsonElement///PointingToDeclaration/">JsonElement</span><span class="token operator">&gt;</span></div><div class="brief "><p class="paragraph">Kicks a group member.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1527156724%2FFunctions%2F-1889619766" anchor-label="setGroupLeave" id="-1527156724%2FFunctions%2F-1889619766" data-filterable-set=":onebot-v12-lib:dokkaHtml/main"></a>
+          <div class="table-row" data-filterable-current=":onebot-v12-lib:dokkaHtml/main" data-filterable-set=":onebot-v12-lib:dokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="set-group-leave.html"><span>set</span><wbr></wbr><span>Group</span><wbr></wbr><span><span>Leave</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1527156724%2FFunctions%2F-1889619766"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":onebot-v12-lib:dokkaHtml/main"><div class="symbol monospace"><span class="token keyword">suspend </span><span class="token keyword">fun </span><a href="set-group-leave.html"><span class="token function">setGroupLeave</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">groupId<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin-stdlib/kotlin/-string/index.html">String</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="../../cn.qfys521.onebot.v12.lib.model/-api-response/index.html">ApiResponse</a><span class="token operator">&lt;</span><span data-unresolved-link="kotlinx.serialization.json/JsonElement///PointingToDeclaration/">JsonElement</span><span class="token operator">&gt;</span></div><div class="brief "><p class="paragraph">Leaves group using extended action naming.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="229434537%2FFunctions%2F-1889619766" anchor-label="setGroupName" id="229434537%2FFunctions%2F-1889619766" data-filterable-set=":onebot-v12-lib:dokkaHtml/main"></a>
+          <div class="table-row" data-filterable-current=":onebot-v12-lib:dokkaHtml/main" data-filterable-set=":onebot-v12-lib:dokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="set-group-name.html"><span>set</span><wbr></wbr><span>Group</span><wbr></wbr><span><span>Name</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="229434537%2FFunctions%2F-1889619766"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":onebot-v12-lib:dokkaHtml/main"><div class="symbol monospace"><span class="token keyword">suspend </span><span class="token keyword">fun </span><a href="set-group-name.html"><span class="token function">setGroupName</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">groupId<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin-stdlib/kotlin/-string/index.html">String</a><span class="token punctuation">, </span></span><span class="parameter ">groupName<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin-stdlib/kotlin/-string/index.html">String</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="../../cn.qfys521.onebot.v12.lib.model/-api-response/index.html">ApiResponse</a><span class="token operator">&lt;</span><span data-unresolved-link="kotlinx.serialization.json/JsonElement///PointingToDeclaration/">JsonElement</span><span class="token operator">&gt;</span></div><div class="brief "><p class="paragraph">Sets group name.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-82999621%2FFunctions%2F-1889619766" anchor-label="setGroupSpecialTitle" id="-82999621%2FFunctions%2F-1889619766" data-filterable-set=":onebot-v12-lib:dokkaHtml/main"></a>
+          <div class="table-row" data-filterable-current=":onebot-v12-lib:dokkaHtml/main" data-filterable-set=":onebot-v12-lib:dokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="set-group-special-title.html"><span>set</span><wbr></wbr><span>Group</span><wbr></wbr><span>Special</span><wbr></wbr><span><span>Title</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-82999621%2FFunctions%2F-1889619766"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":onebot-v12-lib:dokkaHtml/main"><div class="symbol monospace"><span class="token keyword">suspend </span><span class="token keyword">fun </span><a href="set-group-special-title.html"><span class="token function">setGroupSpecialTitle</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">groupId<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin-stdlib/kotlin/-string/index.html">String</a><span class="token punctuation">, </span></span><span class="parameter ">userId<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin-stdlib/kotlin/-string/index.html">String</a><span class="token punctuation">, </span></span><span class="parameter ">specialTitle<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin-stdlib/kotlin/-string/index.html">String</a><span class="token punctuation">, </span></span><span class="parameter ">duration<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin-stdlib/kotlin/-int/index.html">Int</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="../../cn.qfys521.onebot.v12.lib.model/-api-response/index.html">ApiResponse</a><span class="token operator">&lt;</span><span data-unresolved-link="kotlinx.serialization.json/JsonElement///PointingToDeclaration/">JsonElement</span><span class="token operator">&gt;</span></div><div class="brief "><p class="paragraph">Sets group member special title.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="734387987%2FFunctions%2F-1889619766" anchor-label="setGroupWholeBan" id="734387987%2FFunctions%2F-1889619766" data-filterable-set=":onebot-v12-lib:dokkaHtml/main"></a>
+          <div class="table-row" data-filterable-current=":onebot-v12-lib:dokkaHtml/main" data-filterable-set=":onebot-v12-lib:dokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="set-group-whole-ban.html"><span>set</span><wbr></wbr><span>Group</span><wbr></wbr><span>Whole</span><wbr></wbr><span><span>Ban</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="734387987%2FFunctions%2F-1889619766"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":onebot-v12-lib:dokkaHtml/main"><div class="symbol monospace"><span class="token keyword">suspend </span><span class="token keyword">fun </span><a href="set-group-whole-ban.html"><span class="token function">setGroupWholeBan</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">groupId<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin-stdlib/kotlin/-string/index.html">String</a><span class="token punctuation">, </span></span><span class="parameter ">enable<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin-stdlib/kotlin/-boolean/index.html">Boolean</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="../../cn.qfys521.onebot.v12.lib.model/-api-response/index.html">ApiResponse</a><span class="token operator">&lt;</span><span data-unresolved-link="kotlinx.serialization.json/JsonElement///PointingToDeclaration/">JsonElement</span><span class="token operator">&gt;</span></div><div class="brief "><p class="paragraph">Enables or disables whole-group ban.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      <div class="footer">
+        <span class="go-to-top-icon"><a href="#content" id="go-to-top-link"></a></span><span>© 2026 Copyright</span><span
+                class="pull-right"><span>Generated by </span><a
+                href="https://github.com/Kotlin/dokka"><span>dokka</span><span class="padded-icon"></span></a></span>
+      </div>
+            </div>
+        </div>
+    </div>
+<script src="/projects/onebot-kotlin-sdk/kdoc/kdoc-home-link.js" defer></script>
+</body>
+</html>

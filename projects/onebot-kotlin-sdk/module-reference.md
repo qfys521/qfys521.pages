@@ -1,12 +1,12 @@
 # 模块怎么引用
 
-`onebot-kotlin-sdk` 是 Gradle 多模块工程：
+`onebot-kotlin-sdk` 现在是 Gradle 多模块工程（见 `settings.gradle.kts`）：
 
-- `:onebot-v12-lib`：模型与 API 抽象
-- `:onebot-v12-impl`：Ktor 传输层实现
+- `:onebot-v12-lib`：模型与 API 抽象（`OneBotClient` 等）
+- `:onebot-v12-impl`：Ktor 传输层实现与工厂（`createOneBotV12Client`）
 - `:onebot-v12-example`：可运行示例
 
-## 同仓库模块依赖（推荐）
+## 方式 1：在同一仓库内按模块依赖（推荐）
 
 ```kotlin
 // build.gradle.kts
@@ -21,21 +21,26 @@ dependencies {
 }
 ```
 
-## Maven 坐标依赖（需先发布）
+## 方式 2：作为 Maven 依赖引入（前提：你已发布制品）
 
-根工程当前坐标：`cn.qfys521.onebot:0.1.0`。
+当前根工程坐标来自 `build.gradle.kts`：
+
+- group: `com.onebot`
+- version: `0.1.0`
+
+如果你已经发布到私服或本地仓库，可按下面方式引用：
 
 ```kotlin
 dependencies {
-    implementation("cn.qfys521.onebot:onebot-v12-lib:0.1.0")
-    implementation("cn.qfys521.onebot:onebot-v12-impl:0.1.0")
+    implementation("com.onebot:onebot-v12-lib:0.1.0")
+    implementation("com.onebot:onebot-v12-impl:0.1.0")
 }
 ```
 
 ## 最小入口
 
-```kotlin
-import cn.qfys521.onebot.v12.impl.OneBotClientConfig
-import cn.qfys521.onebot.v12.impl.createOneBotV12Client
-```
+你通常只需要从实现模块引入两个符号：
+
+- `cn.qfys521.onebot.v12.impl.OneBotClientConfig`
+- `cn.qfys521.onebot.v12.impl.createOneBotV12Client`
 
