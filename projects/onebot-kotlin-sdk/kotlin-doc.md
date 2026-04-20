@@ -17,7 +17,7 @@ Set-Location "D:\Code\onebot-kotlin-sdk"
 .\gradlew.bat syncOnebotKdocToPages
 ```
 
-执行后，文档会同步到：`qfys521.pages/.vitepress/public/projects/onebot-kotlin-sdk/kdoc`。
+执行后，文档会同步到：`qfys521.pages/public/projects/onebot-kotlin-sdk/kdoc`。
 
 如果你的 VitePress 是独立项目，可用可配置导出任务：
 
