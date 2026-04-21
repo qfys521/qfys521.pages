@@ -5,7 +5,7 @@ export default defineConfig({
   title: "qfys521 doc site",
   description: "Project documentation hub",
   ignoreDeadLinks: [
-    /\/projects\/onebot-kotlin-sdk\/kdoc(\/.*)?$/,
+    /\/projects\/onebot-kotlin-lib-v11\/kdoc(\/.*)?$/,
     /\/projects\/onebot-kotlin-lib-v12\/kdoc(\/.*)?$/
   ],
   themeConfig: {
@@ -19,8 +19,8 @@ export default defineConfig({
           { text: 'onebot-kotlin-lib', link: '/projects/onebot-kotlin-lib/' },
           { text: 'onebot-kotlin-lib-v11', link: '/projects/onebot-kotlin-lib-v11/' },
           { text: 'onebot-kotlin-lib-v12', link: '/projects/onebot-kotlin-lib-v12/' },
+          { text: 'onebot-kotlin-lib-v11 KDoc', link: '/projects/onebot-kotlin-lib-v11/kotlin-doc' },
           { text: 'onebot-kotlin-lib-v12 KDoc', link: '/projects/onebot-kotlin-lib-v12/kotlin-doc' },
-          { text: 'onebot-kotlin-sdk (legacy)', link: '/projects/onebot-kotlin-sdk/' }
         ]
       },
       { text: 'Examples', link: '/markdown-examples' }
@@ -47,7 +47,8 @@ export default defineConfig({
             { text: 'V11 事件监听', link: '/projects/onebot-kotlin-lib-v11/event-listening' },
             { text: 'V11 通信模式', link: '/projects/onebot-kotlin-lib-v11/transport-modes' },
             { text: 'V11 完整 API', link: '/projects/onebot-kotlin-lib-v11/full-api' },
-            { text: 'V11 运行命令', link: '/projects/onebot-kotlin-lib-v11/run-commands' }
+            { text: 'V11 运行命令', link: '/projects/onebot-kotlin-lib-v11/run-commands' },
+            { text: 'V11 Kotlin API (KDoc)', link: '/projects/onebot-kotlin-lib-v11/kotlin-doc' }
           ]
         }
       ],
@@ -62,17 +63,6 @@ export default defineConfig({
             { text: 'V12 完整 API', link: '/projects/onebot-kotlin-lib-v12/full-api' },
             { text: 'V12 运行命令', link: '/projects/onebot-kotlin-lib-v12/run-commands' },
             { text: 'V12 Kotlin API (KDoc)', link: '/projects/onebot-kotlin-lib-v12/kotlin-doc' }
-          ]
-        }
-      ],
-      '/projects/onebot-kotlin-sdk/': [
-        {
-          text: 'Legacy',
-          items: [
-            { text: '迁移说明', link: '/projects/onebot-kotlin-sdk/' },
-            { text: 'onebot-kotlin-lib', link: '/projects/onebot-kotlin-lib/' },
-            { text: 'onebot-kotlin-lib-v11', link: '/projects/onebot-kotlin-lib-v11/' },
-            { text: 'onebot-kotlin-lib-v12', link: '/projects/onebot-kotlin-lib-v12/' }
           ]
         }
       ],

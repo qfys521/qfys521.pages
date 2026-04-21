@@ -7,4 +7,5 @@
 - 通信模式：[`transport-modes`](/projects/onebot-kotlin-lib-v11/transport-modes)
 - 完整 API：[`full-api`](/projects/onebot-kotlin-lib-v11/full-api)
 - 运行命令：[`run-commands`](/projects/onebot-kotlin-lib-v11/run-commands)
+- Kotlin API 文档：[`kotlin-doc`](/projects/onebot-kotlin-lib-v11/kotlin-doc)
 

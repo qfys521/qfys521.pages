@@ -33,3 +33,30 @@ fun main(): Unit = runBlocking {
 }
 ```
 
+也可以使用 `@Event` 注解自动分发：
+
+```kotlin
+import cn.qfys521.onebot.v11.lib.api.Event
+import cn.qfys521.onebot.v11.lib.api.listenEventsAnnotated
+import cn.qfys521.onebot.v11.lib.model.OneBotV11Event
+import kotlinx.coroutines.runBlocking
+
+private class MyV11Listener {
+    @Event
+    fun onPrivate(event: OneBotV11Event.PrivateMessageEvent) {
+        println("[private] ${event.rawMessage}")
+    }
+
+    @Event
+    fun onAny(event: OneBotV11Event) {
+        println("[event] post_type=${event.postType}")
+    }
+}
+
+fun main(): Unit = runBlocking {
+    // ...create client
+    val job = client.listenEventsAnnotated(MyV11Listener(), this)
+    job.join()
+}
+```
+
