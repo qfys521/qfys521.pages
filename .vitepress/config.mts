@@ -5,7 +5,8 @@ export default defineConfig({
   title: "qfys521 doc site",
   description: "Project documentation hub",
   ignoreDeadLinks: [
-    /\/projects\/onebot-kotlin-sdk\/kdoc(\/.*)?$/
+    /\/projects\/onebot-kotlin-sdk\/kdoc(\/.*)?$/,
+    /\/projects\/onebot-kotlin-lib-v12\/kdoc(\/.*)?$/
   ],
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
@@ -15,48 +16,63 @@ export default defineConfig({
         text: 'Projects',
         items: [
           { text: 'All Projects', link: '/projects/' },
-          { text: 'onebot-kotlin-sdk', link: '/projects/onebot-kotlin-sdk/' },
-          { text: 'onebot-kotlin-sdk KDoc', link: '/projects/onebot-kotlin-sdk/kotlin-doc' }
+          { text: 'onebot-kotlin-lib', link: '/projects/onebot-kotlin-lib/' },
+          { text: 'onebot-kotlin-lib-v11', link: '/projects/onebot-kotlin-lib-v11/' },
+          { text: 'onebot-kotlin-lib-v12', link: '/projects/onebot-kotlin-lib-v12/' },
+          { text: 'onebot-kotlin-lib-v12 KDoc', link: '/projects/onebot-kotlin-lib-v12/kotlin-doc' },
+          { text: 'onebot-kotlin-sdk (legacy)', link: '/projects/onebot-kotlin-sdk/' }
         ]
       },
       { text: 'Examples', link: '/markdown-examples' }
     ],
 
     sidebar: {
+      '/projects/onebot-kotlin-lib/': [
+        {
+          text: 'onebot-kotlin-lib',
+          items: [
+            { text: '文档总览', link: '/projects/onebot-kotlin-lib/' },
+            { text: '模块与依赖', link: '/projects/onebot-kotlin-lib/module-reference' },
+            { text: 'OneBot V11 项目', link: '/projects/onebot-kotlin-lib-v11/' },
+            { text: 'OneBot V12 项目', link: '/projects/onebot-kotlin-lib-v12/' }
+          ]
+        }
+      ],
+      '/projects/onebot-kotlin-lib-v11/': [
+        {
+          text: 'onebot-kotlin-lib-v11',
+          items: [
+            { text: 'V11 总览', link: '/projects/onebot-kotlin-lib-v11/' },
+            { text: 'V11 最小 API', link: '/projects/onebot-kotlin-lib-v11/minimal-api' },
+            { text: 'V11 事件监听', link: '/projects/onebot-kotlin-lib-v11/event-listening' },
+            { text: 'V11 通信模式', link: '/projects/onebot-kotlin-lib-v11/transport-modes' },
+            { text: 'V11 完整 API', link: '/projects/onebot-kotlin-lib-v11/full-api' },
+            { text: 'V11 运行命令', link: '/projects/onebot-kotlin-lib-v11/run-commands' }
+          ]
+        }
+      ],
+      '/projects/onebot-kotlin-lib-v12/': [
+        {
+          text: 'onebot-kotlin-lib-v12',
+          items: [
+            { text: 'V12 总览', link: '/projects/onebot-kotlin-lib-v12/' },
+            { text: 'V12 最小 API', link: '/projects/onebot-kotlin-lib-v12/minimal-api' },
+            { text: 'V12 事件监听', link: '/projects/onebot-kotlin-lib-v12/event-listening' },
+            { text: 'V12 通信模式', link: '/projects/onebot-kotlin-lib-v12/transport-modes' },
+            { text: 'V12 完整 API', link: '/projects/onebot-kotlin-lib-v12/full-api' },
+            { text: 'V12 运行命令', link: '/projects/onebot-kotlin-lib-v12/run-commands' },
+            { text: 'V12 Kotlin API (KDoc)', link: '/projects/onebot-kotlin-lib-v12/kotlin-doc' }
+          ]
+        }
+      ],
       '/projects/onebot-kotlin-sdk/': [
         {
-          text: 'Overview',
+          text: 'Legacy',
           items: [
-            { text: '文档总览', link: '/projects/onebot-kotlin-sdk/' }
-          ]
-        },
-        {
-          text: 'Shared',
-          items: [
-            { text: '模块与依赖', link: '/projects/onebot-kotlin-sdk/module-reference' }
-          ]
-        },
-        {
-          text: 'OneBot V11',
-          items: [
-            { text: 'V11 总览', link: '/projects/onebot-kotlin-sdk/v11/' },
-            { text: 'V11 最小 API', link: '/projects/onebot-kotlin-sdk/v11/minimal-api' },
-            { text: 'V11 事件监听', link: '/projects/onebot-kotlin-sdk/v11/event-listening' },
-            { text: 'V11 通信模式', link: '/projects/onebot-kotlin-sdk/v11/transport-modes' },
-            { text: 'V11 完整 API', link: '/projects/onebot-kotlin-sdk/v11/full-api' },
-            { text: 'V11 运行命令', link: '/projects/onebot-kotlin-sdk/v11/run-commands' }
-          ]
-        },
-        {
-          text: 'OneBot V12',
-          items: [
-            { text: 'V12 总览', link: '/projects/onebot-kotlin-sdk/v12/' },
-            { text: 'V12 最小 API', link: '/projects/onebot-kotlin-sdk/v12/minimal-api' },
-            { text: 'V12 事件监听', link: '/projects/onebot-kotlin-sdk/v12/event-listening' },
-            { text: 'V12 通信模式', link: '/projects/onebot-kotlin-sdk/v12/transport-modes' },
-            { text: 'V12 完整 API', link: '/projects/onebot-kotlin-sdk/v12/full-api' },
-            { text: 'V12 运行命令', link: '/projects/onebot-kotlin-sdk/v12/run-commands' },
-            { text: 'V12 Kotlin API (KDoc)', link: '/projects/onebot-kotlin-sdk/kotlin-doc' }
+            { text: '迁移说明', link: '/projects/onebot-kotlin-sdk/' },
+            { text: 'onebot-kotlin-lib', link: '/projects/onebot-kotlin-lib/' },
+            { text: 'onebot-kotlin-lib-v11', link: '/projects/onebot-kotlin-lib-v11/' },
+            { text: 'onebot-kotlin-lib-v12', link: '/projects/onebot-kotlin-lib-v12/' }
           ]
         }
       ],
@@ -65,7 +81,9 @@ export default defineConfig({
           text: 'Projects',
           items: [
             { text: '项目总览', link: '/projects/' },
-            { text: 'onebot-kotlin-sdk', link: '/projects/onebot-kotlin-sdk/' }
+            { text: 'onebot-kotlin-lib', link: '/projects/onebot-kotlin-lib/' },
+            { text: 'onebot-kotlin-lib-v11', link: '/projects/onebot-kotlin-lib-v11/' },
+            { text: 'onebot-kotlin-lib-v12', link: '/projects/onebot-kotlin-lib-v12/' }
           ]
         }
       ],
@@ -74,7 +92,9 @@ export default defineConfig({
           text: 'Projects',
           items: [
             { text: '项目总览', link: '/projects/' },
-            { text: 'onebot-kotlin-sdk', link: '/projects/onebot-kotlin-sdk/' }
+            { text: 'onebot-kotlin-lib', link: '/projects/onebot-kotlin-lib/' },
+            { text: 'onebot-kotlin-lib-v11', link: '/projects/onebot-kotlin-lib-v11/' },
+            { text: 'onebot-kotlin-lib-v12', link: '/projects/onebot-kotlin-lib-v12/' }
           ]
         },
         {
