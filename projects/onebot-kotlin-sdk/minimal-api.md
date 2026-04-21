@@ -1,52 +1,7 @@
-# 最小 API 调用示例
+# 最小 API 调用（已拆分）
 
-目标：演示最小可用调用链路，包括：
+该页面已拆分为两个独立项目文档：
 
-- `get_self_info`（查自身信息）
-- `send_message`（发送消息）
-
-```kotlin
-import cn.qfys521.onebot.v12.impl.OneBotClientConfig
-import cn.qfys521.onebot.v12.impl.createOneBotV12Client
-import cn.qfys521.onebot.v12.lib.model.ResponseStatus
-import cn.qfys521.onebot.v12.lib.model.Segment
-import cn.qfys521.onebot.v12.lib.model.SendMessageRequest
-import kotlinx.coroutines.runBlocking
-
-fun main(): Unit = runBlocking {
-    val client = createOneBotV12Client(
-        OneBotClientConfig(
-            baseUrl = System.getenv("ONEBOT_BASE_URL") ?: "http://127.0.0.1:6700",
-            platform = System.getenv("ONEBOT_PLATFORM") ?: "kook",
-            accountId = System.getenv("ONEBOT_ACCOUNT_ID") ?: "demo",
-            accessToken = System.getenv("ONEBOT_ACCESS_TOKEN")
-        )
-    )
-
-    val selfInfo = client.getSelfInfo()
-    println("self_info status=${selfInfo.status}, data=${selfInfo.data}")
-
-    val sendResp = client.sendMessage(
-        SendMessageRequest(
-            detailType = "private", // private/group/channel
-            userId = System.getenv("ONEBOT_TARGET_USER_ID") ?: "123456",
-            message = listOf(Segment.text("hello from onebot-kotlin-sdk"))
-        )
-    )
-
-    if (sendResp.status == ResponseStatus.OK) {
-        println("send_message ok, messageId=${sendResp.data?.messageId}")
-    } else {
-        println("send_message failed, retcode=${sendResp.retcode}, msg=${sendResp.message}")
-    }
-
-    client.close()
-}
-```
-
-## 参数提示
-
-- 私聊：`detailType = "private"` + `userId`
-- 群聊：`detailType = "group"` + `groupId`
-- 频道：`detailType = "channel"` + `guildId` + `channelId`
+- OneBot V11：[`V11 最小 API`](/projects/onebot-kotlin-sdk/v11/minimal-api)
+- OneBot V12：[`V12 最小 API`](/projects/onebot-kotlin-sdk/v12/minimal-api)
 

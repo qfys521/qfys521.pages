@@ -1,38 +1,7 @@
-# 可直接跑的命令
+# 可运行命令（已拆分）
 
-以下命令按 Windows PowerShell 编写，可在仓库根目录执行。
+该页面已拆分为两个独立项目文档：
 
-## 1) 编译 + 测试
-
-```powershell
-Set-Location "D:\Code\onebot-kotlin-sdk"
-.\gradlew.bat clean test
-```
-
-## 2) 运行官方示例模块
-
-```powershell
-Set-Location "D:\Code\onebot-kotlin-sdk"
-$env:ONEBOT_BASE_URL="http://127.0.0.1:6700"
-$env:ONEBOT_PLATFORM="kook"
-$env:ONEBOT_ACCOUNT_ID="demo"
-$env:ONEBOT_ACCESS_TOKEN=""
-$env:ONEBOT_WS_URL="ws://127.0.0.1:6700/onebot/v12/ws"
-.\gradlew.bat :onebot-v12-example:run
-```
-
-## 3) 只跑实现层测试
-
-```powershell
-Set-Location "D:\Code\onebot-kotlin-sdk"
-.\gradlew.bat :onebot-v12-impl:test
-```
-
-## 4) 预览文档站（VitePress）
-
-```powershell
-Set-Location "D:\Code\onebot-kotlin-sdk\qfys521.pages"
-npm install
-npm run docs:dev
-```
+- OneBot V11：[`V11 运行命令`](/projects/onebot-kotlin-sdk/v11/run-commands)
+- OneBot V12：[`V12 运行命令`](/projects/onebot-kotlin-sdk/v12/run-commands)
 
